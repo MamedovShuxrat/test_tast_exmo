@@ -19,9 +19,11 @@ body {
 }
 
 .dunno-wrapper {
+    position: relative;
     margin: 0 auto;
     padding: 80px 52px;
-    width: 428px;
+    width: 440px;
+    height: 887px;
     background-image: url('images/iPhone-13-Pro-Front.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,10 +43,18 @@ body {
     color: rgba(0, 0, 0, 0.60);
     font-size: 20px;
     line-height: normal;
+    outline: none;
 }
 
 .dunno_input {
     margin-bottom: 96px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .dunno_img {
@@ -55,10 +65,27 @@ body {
 .dunno_user-input {
     padding: 16px;
     border-radius: 72px;
-    margin-bottom: 50px;
+}
+
+.dunno_user {
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    right: 191px;
+    display: none;
+}
+
+.sound-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
 }
 
 .dunno_mic {
+    margin-top: 50px;
     border-radius: 102px;
     border: 2px solid #E5EFFA;
     opacity: 0.8;
@@ -71,9 +98,16 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: absolute;
+    bottom: 50px;
 }
 
 .dunno_mic-img {
     width: 32px;
     height: 32px;
+}
+
+
+.hide {
+    display: none;
 }

@@ -14,16 +14,21 @@
 <body>
     <div class="container">
         <div class="dunno-wrapper">
-            <input type="text" placeholder="говорите" class="input dunno_input">
+            <input type="text" readonly placeholder="говорите" class="input dunno_input">
             <img src="images/dunno.png" alt="dunno" class="dunno_img">
             <div class="dunno_user">
-                <input type="text" placeholder=" ввести текстом" class=" input dunno_user-input">
+                <div class="wave ">
+                    <img src="images/soundwave.png" alt="wave" class="sound-wave first-wave">
+                    <img src="images/soundwave1.png" alt="wave" class="sound-wave second-wave">
+                </div>
+                <input type="text" placeholder=" ввести текстом" class="input dunno_user-input">
             </div>
             <div class="dunno_mic">
                 <img src="images/red.svg" class="dunno_mic-img">
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
